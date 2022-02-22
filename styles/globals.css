@@ -1,16 +1,49 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
 
-* {
-  box-sizing: border-box;
+	@font-face {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Gilroy'), url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+			url('/fonts/Gilroy-Regular.woff') format('woff'),
+			url('/fonts/Gilroy-Regular.ttf') format('ttf'),
+			url('/fonts/Gilroy-Regular.eot') format('eot');
+	}
+
+	@font-face {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 600;
+		src: local('Gilroy'), url('/fonts/Gilroy-Semibold.woff2') format('woff2'),
+			url('/fonts/Gilroy-Semibold.woff') format('woff'),
+			url('/fonts/Gilroy-Semibold.ttf') format('ttf'),
+			url('/fonts/Gilroy-Semibold.eot') format('eot');
+	}
+
+	@font-face {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Gilroy'), url('/fonts/Gilroy-Bold.woff2') format('woff2'),
+			url('/fonts/Gilroy-Bold.woff') format('woff'),
+			url('/fonts/Gilroy-Bold.ttf') format('ttf'),
+			url('/fonts/Gilroy-Bold.eot') format('eot');
+	}
+
+	@font-face {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 900;
+		src: local('Gilroy'), url('/fonts/Gilroy-Black.woff2') format('woff2'),
+			url('/fonts/Gilroy-Black.woff') format('woff'),
+			url('/fonts/Gilroy-Black.ttf') format('ttf'),
+			url('/fonts/Gilroy-Black.eot') format('eot');
+	}
 }
