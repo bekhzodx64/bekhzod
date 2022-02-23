@@ -11,7 +11,7 @@ import LangSwitcher from '../components/widgets/langSwitcher';
 
 function MyApp({ Component, pageProps, router }) {
 	return (
-		<ThemeProvider defaultTheme='system' attribute='class'>
+		<ThemeProvider defaultTheme='light' attribute='class'>
 			<LangSwitcher />
 			<Container>
 				<Wrapper>

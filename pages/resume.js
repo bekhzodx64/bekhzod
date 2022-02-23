@@ -11,9 +11,9 @@ const Resume = () => {
 
 	return (
 		<div className='flex h-[90%] flex-col gap-5'>
-			<Head>
+			{/* <Head>
 				<title>{t('resume:title')}</title>
-			</Head>
+			</Head> */}
 
 			<div className='grid gap-10 md:grid-cols-2'>
 				<div className='space-y-3'>

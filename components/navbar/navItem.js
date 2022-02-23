@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const NavItem = ({ activeItem, name, route, setActiveItem }) => {
 	return activeItem !== name ? (
-		<Link href={route} scroll={false}>
+		<Link href={route} scroll={false} replace>
 			<a
 				onClick={() => setActiveItem(name)}
 				className='decoration-blue-500 decoration-2 underline-offset-2 outline-none hover:text-blue-500 focus:underline'>

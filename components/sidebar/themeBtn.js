@@ -1,21 +1,49 @@
+import { useEffect, useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { useTheme } from 'next-themes';
 
-const ThemeBtn = () => {
-	const { theme, setTheme } = useTheme();
-	const { t } = useTranslation('sidebar');
+import { AiOutlineReload } from 'react-icons/ai';
+import { BsSun, BsMoon } from 'react-icons/bs';
 
-	// theme changer function
+const ThemeBtn = () => {
+	const [mounted, setMounted] = useState(false);
+	const { theme, setTheme } = useTheme();
+	const { t } = useTranslation();
+
 	const changeTheme = () => {
 		setTheme(theme === 'light' ? 'dark' : 'light');
 	};
 
+	useEffect(() => setMounted(true), []);
+
+	if (!mounted)
+		return (
+			<button className='my-2 mx-auto flex w-full max-w-[300px] items-center justify-center space-x-2 rounded-full bg-blue-500 px-8 py-3 text-white outline-none transition focus:ring-4 lg:max-w-[200px]'>
+				<AiOutlineReload className='animate-spin' />
+				{theme === 'dark' ? (
+					<span>{t('sidebar:day')}</span>
+				) : (
+					<span>{t('sidebar:night')}</span>
+				)}
+			</button>
+		);
+
 	return (
 		<div className='select-none text-center'>
 			<button
-				className='my-2 w-full max-w-[300px] rounded-full bg-blue-500 px-8 py-3 text-white outline-none transition focus:ring-4 lg:max-w-[200px]'
+				className='my-2 mx-auto flex w-full max-w-[300px] items-center justify-center space-x-2 rounded-full bg-blue-500 px-8 py-3 text-white outline-none transition focus:ring-4 lg:max-w-[200px]'
 				onClick={changeTheme}>
-				{t('theme')}
+				{theme === 'dark' ? (
+					<>
+						<BsSun />
+						<span>{t('sidebar:day')}</span>
+					</>
+				) : (
+					<>
+						<BsMoon />
+						<span>{t('sidebar:night')}</span>
+					</>
+				)}
 			</button>
 		</div>
 	);

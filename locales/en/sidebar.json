@@ -3,5 +3,6 @@
 	"profession": "Web Developer",
 	"address": "Uzbekistan, Tashkent",
 	"contact": "Contact Me",
-	"theme": "Change Theme"
+	"day": "Light mode",
+	"night": "Dark mode"
 }
