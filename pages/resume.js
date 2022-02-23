@@ -62,21 +62,21 @@ const Resume = () => {
 
 			<div className='my-auto grid gap-6 md:grid-cols-2'>
 				<div>
-					<h5 className='mb-3 flex items-center space-x-1 text-[22px] font-bold xl:text-2xl'>
+					<h5 className='mb-3 flex items-center justify-center space-x-1 text-[22px] font-bold md:justify-start xl:text-2xl'>
 						<MdDashboardCustomize />
 						<span>{t('resume:knowledge')}</span>
 					</h5>
 					<div className='space-y-2'>
-						<Bar name='Javascript' level='50%' />
-						<Bar name='React' level='40%' />
-						<Bar name='NextJs' level='40%' />
+						<Bar name='Javascript' level='60%' />
+						<Bar name='React' level='50%' />
+						<Bar name='NextJs' level='45%' />
 						<Bar name='Tailwindcss' level='85%' />
-						<Bar name='NodeJs' level='25%' />
+						<Bar name='NodeJs' level='40%' />
 					</div>
 				</div>
 
 				<div>
-					<h5 className='mb-3 flex items-center space-x-1 text-[22px] font-bold xl:text-2xl'>
+					<h5 className='mb-3 flex items-center justify-center space-x-1 text-[22px] font-bold md:justify-start xl:text-2xl'>
 						<RiToolsFill />
 						<span>{t('resume:programs')}</span>
 					</h5>

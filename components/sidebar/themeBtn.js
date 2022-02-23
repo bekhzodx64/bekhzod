@@ -10,8 +10,23 @@ const ThemeBtn = () => {
 	const { theme, setTheme } = useTheme();
 	const { t } = useTranslation();
 
+	const day = () => {
+		const day = document.getElementById('day');
+		day.play();
+	};
+
+	const night = () => {
+		const night = document.getElementById('night');
+		night.play();
+	};
+
 	const changeTheme = () => {
 		setTheme(theme === 'light' ? 'dark' : 'light');
+		if (theme === 'dark') {
+			day();
+		} else {
+			night();
+		}
 	};
 
 	useEffect(() => setMounted(true), []);
@@ -45,6 +60,8 @@ const ThemeBtn = () => {
 					</>
 				)}
 			</button>
+			<audio id='day' src='/sounds/day.mp3'></audio>
+			<audio id='night' src='/sounds/night.mp3'></audio>
 		</div>
 	);
 };
