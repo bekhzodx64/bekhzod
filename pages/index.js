@@ -2,12 +2,12 @@ import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 
 const HomePage = () => {
-	const { t } = useTranslation('common');
+	const { t } = useTranslation();
 
 	return (
 		<div>
 			<Head>
-				<title>{t('title')}</title>
+				<title>{t('main:title')}</title>
 			</Head>
 			<h2 className='fontbla mb-5 text-justify'>
 				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные

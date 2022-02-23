@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 
+import Bar from '../components/resume/bar';
+
 import { MdSchool } from 'react-icons/md';
 import { GoLinkExternal } from 'react-icons/go';
 import { RiToolsFill } from 'react-icons/ri';
@@ -11,9 +13,9 @@ const Resume = () => {
 
 	return (
 		<div className='flex h-[90%] flex-col gap-5'>
-			{/* <Head>
+			<Head>
 				<title>{t('resume:title')}</title>
-			</Head> */}
+			</Head>
 
 			<div className='grid gap-10 md:grid-cols-2'>
 				<div className='space-y-3'>
@@ -58,16 +60,18 @@ const Resume = () => {
 				</div>
 			</div>
 
-			<div className='mt-auto grid gap-6 pb-6 md:grid-cols-2'>
+			<div className='my-auto grid gap-6 md:grid-cols-2'>
 				<div>
 					<h5 className='mb-3 flex items-center space-x-1 text-[22px] font-bold xl:text-2xl'>
 						<MdDashboardCustomize />
 						<span>{t('resume:knowledge')}</span>
 					</h5>
-					<div className='pointer-events-none select-none space-y-2 print:flex print:items-center print:space-y-0'>
-						{/* {languages.map((language) => (
-							<Bar data={language} key={language.name} />
-						))} */}
+					<div className='space-y-2'>
+						<Bar name='Javascript' level='50%' />
+						<Bar name='React' level='40%' />
+						<Bar name='NextJs' level='40%' />
+						<Bar name='Tailwindcss' level='85%' />
+						<Bar name='NodeJs' level='25%' />
 					</div>
 				</div>
 
@@ -76,10 +80,12 @@ const Resume = () => {
 						<RiToolsFill />
 						<span>{t('resume:programs')}</span>
 					</h5>
-					<div className='pointer-events-none select-none space-y-2 print:flex print:items-center print:space-y-0'>
-						{/* {tools.map((tool) => (
-							<Bar data={tool} key={tool.name} />
-						))} */}
+					<div className='space-y-2'>
+						<Bar name='Figma' level='70%' />
+						<Bar name='Photoshop' level='80%' />
+						<Bar name='Illustrator' level='45%' />
+						<Bar name='Zeplin' level='85%' />
+						<Bar name='AdobeXD' level='75%' />
 					</div>
 				</div>
 			</div>
