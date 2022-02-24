@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
 
 import { AiOutlineReload } from 'react-icons/ai';
 import { BsSun, BsMoon } from 'react-icons/bs';
@@ -45,8 +46,9 @@ const ThemeBtn = () => {
 
 	return (
 		<div className='select-none text-center'>
-			<button
-				className='my-2 mx-auto flex w-full max-w-[300px] items-center justify-center space-x-2 rounded-full bg-blue-500 px-8 py-3 text-white outline-none transition focus:ring-4 lg:max-w-[200px]'
+			<motion.button
+				whileTap={{ scale: 0.95 }}
+				className='my-2 mx-auto flex w-full max-w-[300px] items-center justify-center space-x-2 rounded-full bg-blue-500 px-8 py-3 text-white outline-none focus:ring-4 lg:max-w-[200px]'
 				onClick={changeTheme}>
 				{theme === 'dark' ? (
 					<>
@@ -59,9 +61,9 @@ const ThemeBtn = () => {
 						<span>{t('sidebar:night')}</span>
 					</>
 				)}
-			</button>
-			<audio id='day' src='/sounds/day.mp3'></audio>
-			<audio id='night' src='/sounds/night.mp3'></audio>
+				<audio id='day' src='/sounds/day.mp3'></audio>
+				<audio id='night' src='/sounds/night.mp3'></audio>
+			</motion.button>
 		</div>
 	);
 };

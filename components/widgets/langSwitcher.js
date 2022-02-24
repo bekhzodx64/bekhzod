@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 import { MdClose, MdOutlineLanguage } from 'react-icons/md';
 
