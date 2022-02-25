@@ -83,7 +83,7 @@ const Resume = () => {
 					</h5>
 					<div className='space-y-2'>
 						{knowledges.map((knowledge) => (
-							<Bar name={knowledge.name} level={knowledge.level} />
+							<Bar name={knowledge.name} level={knowledge.level} key={knowledge.name} />
 						))}
 					</div>
 				</div>
@@ -95,7 +95,7 @@ const Resume = () => {
 					</h5>
 					<div className='space-y-2'>
 						{tools.map((tool) => (
-							<Bar name={tool.name} level={tool.level} />
+							<Bar name={tool.name} level={tool.level} key={tool.name} />
 						))}
 					</div>
 				</div>

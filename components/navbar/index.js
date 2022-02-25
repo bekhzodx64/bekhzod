@@ -19,7 +19,7 @@ const Navbar = () => {
 		if (pathname === '/') setActiveItem(about);
 		if (pathname === '/projects') setActiveItem(projects);
 		if (pathname === '/resume') setActiveItem(resume);
-	}, [about, projects, resume]);
+	}, [about, projects, resume, pathname]);
 
 	return (
 		<div className='mb-6 flex items-center justify-between'>
