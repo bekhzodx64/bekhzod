@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
+import { knowledges, tools } from '../data';
+import { motion } from 'framer-motion';
+import { fadeInUp, routeAnimation } from '../helpers/animations';
 
 import Bar from '../components/resume/bar';
 
@@ -12,13 +15,21 @@ const Resume = () => {
 	const { t } = useTranslation();
 
 	return (
-		<div className='flex h-[90%] flex-col gap-5'>
+		<motion.div
+			variants={routeAnimation}
+			initial='initial'
+			animate='animate'
+			className='flex h-[90%] flex-col gap-5'>
 			<Head>
 				<title>{t('resume:title')}</title>
 			</Head>
 
 			<div className='grid gap-10 md:grid-cols-2'>
-				<div className='space-y-3'>
+				<motion.div
+					variants={fadeInUp}
+					initial='initial'
+					animate='animate'
+					className='space-y-3'>
 					<h5 className='text-center text-2xl font-bold md:text-left'>
 						{t('resume:education')}
 					</h5>
@@ -33,9 +44,13 @@ const Resume = () => {
 							Имени Мухаммад Ал-Хоразмий.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className='space-y-3'>
+				<motion.div
+					variants={fadeInUp}
+					initial='initial'
+					animate='animate'
+					className='space-y-3'>
 					<h5 className='text-center text-2xl font-bold md:text-left'>
 						{t('resume:experience')}
 					</h5>
@@ -57,7 +72,7 @@ const Resume = () => {
 							уволиться из за нехватки времени на учебу.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 
 			<div className='my-auto grid gap-6 md:grid-cols-2'>
@@ -67,11 +82,9 @@ const Resume = () => {
 						<span>{t('resume:knowledge')}</span>
 					</h5>
 					<div className='space-y-2'>
-						<Bar name='Javascript' level='60%' />
-						<Bar name='React' level='50%' />
-						<Bar name='NextJs' level='45%' />
-						<Bar name='Tailwindcss' level='85%' />
-						<Bar name='NodeJs' level='40%' />
+						{knowledges.map((knowledge) => (
+							<Bar name={knowledge.name} level={knowledge.level} />
+						))}
 					</div>
 				</div>
 
@@ -81,15 +94,13 @@ const Resume = () => {
 						<span>{t('resume:programs')}</span>
 					</h5>
 					<div className='space-y-2'>
-						<Bar name='Figma' level='70%' />
-						<Bar name='Photoshop' level='80%' />
-						<Bar name='Illustrator' level='45%' />
-						<Bar name='Zeplin' level='85%' />
-						<Bar name='AdobeXD' level='75%' />
+						{tools.map((tool) => (
+							<Bar name={tool.name} level={tool.level} />
+						))}
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
