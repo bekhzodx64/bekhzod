@@ -37,6 +37,7 @@ const ThemeBtn = () => {
 	return (
 		<div className='mx-auto flex w-full max-w-[300px] select-none items-center space-x-3 lg:max-w-[200px]'>
 			<motion.button
+				aria-label='Theme Changer'
 				whileTap={{ scale: 0.9 }}
 				className='my-2 flex items-center justify-center rounded-full bg-blue-500 px-3 py-3 text-white outline-none focus:ring-4'
 				onClick={changeTheme}>
