@@ -3,67 +3,48 @@ import useTranslation from 'next-translate/useTranslation';
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 
+import LangSwitcher from '../widgets/langSwitcher';
+
 import { AiOutlineReload } from 'react-icons/ai';
-import { BsSun, BsMoon } from 'react-icons/bs';
+import { BsSunFill, BsMoonFill } from 'react-icons/bs';
 
 const ThemeBtn = () => {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 	const { t } = useTranslation();
 
-	const day = () => {
-		const day = document.getElementById('day');
-		day.play();
-	};
-
-	const night = () => {
-		const night = document.getElementById('night');
-		night.play();
+	const sound = () => {
+		const sound = document.getElementById('sound');
+		sound.play();
 	};
 
 	const changeTheme = () => {
 		setTheme(theme === 'light' ? 'dark' : 'light');
-		if (theme === 'dark') {
-			day();
-		} else {
-			night();
-		}
+		sound();
 	};
 
 	useEffect(() => setMounted(true), []);
 
 	if (!mounted)
 		return (
-			<button className='my-2 mx-auto flex w-full max-w-[300px] items-center justify-center space-x-2 rounded-full bg-blue-500 px-8 py-3 text-white outline-none transition focus:ring-4 lg:max-w-[200px]'>
-				<AiOutlineReload className='animate-spin' />
-				{theme === 'dark' ? (
-					<span>{t('sidebar:day')}</span>
-				) : (
-					<span>{t('sidebar:night')}</span>
-				)}
-			</button>
+			<div className='mx-auto w-full max-w-[200px] select-none'>
+				<button className='my-2 flex items-center justify-center rounded-full bg-blue-500 px-3 py-3 text-white outline-none focus:ring-4'>
+					<AiOutlineReload className='animate-spin' />
+				</button>
+			</div>
 		);
 
 	return (
-		<div className='select-none text-center'>
+		<div className='mx-auto flex w-full max-w-[300px] select-none items-center space-x-3 lg:max-w-[200px]'>
 			<motion.button
-				whileTap={{ scale: 0.95 }}
-				className='my-2 mx-auto flex w-full max-w-[300px] items-center justify-center space-x-2 rounded-full bg-blue-500 px-8 py-3 text-white outline-none focus:ring-4 lg:max-w-[200px]'
+				whileTap={{ scale: 0.9 }}
+				className='my-2 flex items-center justify-center rounded-full bg-blue-500 px-3 py-3 text-white outline-none focus:ring-4'
 				onClick={changeTheme}>
-				{theme === 'dark' ? (
-					<>
-						<BsSun />
-						<span>{t('sidebar:day')}</span>
-					</>
-				) : (
-					<>
-						<BsMoon />
-						<span>{t('sidebar:night')}</span>
-					</>
-				)}
-				<audio id='day' src='/sounds/day.mp3'></audio>
-				<audio id='night' src='/sounds/night.mp3'></audio>
+				{theme === 'dark' ? <BsSunFill /> : <BsMoonFill />}
+				<audio id='sound' src='/sounds/btn.mp3'></audio>
 			</motion.button>
+
+			<LangSwitcher />
 		</div>
 	);
 };

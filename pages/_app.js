@@ -12,13 +12,12 @@ import LangSwitcher from '../components/widgets/langSwitcher';
 function MyApp({ Component, pageProps, router }) {
 	return (
 		<ThemeProvider defaultTheme='light' attribute='class'>
-			<LangSwitcher />
 			<Container>
 				<Wrapper>
 					<Layout className='lg:max-w-xs'>
 						<Sidebar />
 					</Layout>
-					<Layout>
+					<Layout className='relative'>
 						<Navbar />
 						<Component {...pageProps} key={router.route} />
 					</Layout>

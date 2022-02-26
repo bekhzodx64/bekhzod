@@ -7,7 +7,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/mogo/',
 		github_url: 'https://github.com/bekhzodx64/mogo',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS'],
+		key_techs: ['HTML', 'CSS'],
 	},
 	{
 		id: 2,
@@ -16,7 +16,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/yangi-hayot/',
 		github_url: 'https://github.com/bekhzodx64/yangi-hayot',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS', 'Tailwindcss'],
+		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 	{
 		id: 3,
@@ -25,7 +25,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/tesla/',
 		github_url: 'https://github.com/bekhzodx64/tesla',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS', 'Tailwindcss'],
+		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 	{
 		id: 4,
@@ -34,7 +34,7 @@ export const projects = [
 		deployed_url: 'https://esbuz.uz/',
 		github_url: 'https://github.com/bekhzodx64/esbuz',
 		// category: ['html'],
-		// key_techs: ['HTML', 'Tailwindcss'],
+		key_techs: ['HTML', 'Tailwindcss'],
 	},
 	{
 		id: 5,
@@ -43,7 +43,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/react-food/',
 		github_url: 'https://github.com/bekhzodx64/react-food',
 		// category: ['react'],
-		// key_techs: ['HTML', 'CSS', 'React'],
+		key_techs: ['HTML', 'CSS', 'React'],
 	},
 	{
 		id: 6,
@@ -52,7 +52,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/react-shop/',
 		github_url: 'https://github.com/bekhzodx64/react-shop',
 		// category: ['react'],
-		// key_techs: ['HTML', 'CSS', 'React'],
+		key_techs: ['HTML', 'CSS', 'React'],
 	},
 	{
 		id: 7,
@@ -61,7 +61,7 @@ export const projects = [
 		deployed_url: 'https://darmon-diagnostika.uz/',
 		github_url: 'https://github.com/bekhzodx64/darmon-diagnostika',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS', 'Sass'],
+		key_techs: ['HTML', 'CSS', 'Sass'],
 	},
 	{
 		id: 8,
@@ -70,7 +70,7 @@ export const projects = [
 		deployed_url: 'https://rossvik.uz/',
 		github_url: 'https://github.com/bekhzodx64/rossvik',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS', 'Sass'],
+		key_techs: ['HTML', 'CSS', 'Sass'],
 	},
 	{
 		id: 9,
@@ -79,7 +79,7 @@ export const projects = [
 		deployed_url: 'https://dalshe-bolshe.uz/',
 		github_url: 'https://github.com/bekhzodx64/db-deploy',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS', 'Tailwindcss'],
+		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 	{
 		id: 10,
@@ -88,7 +88,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/react-project/',
 		github_url: 'https://github.com/bekhzodx64/react-project',
 		// category: ['react'],
-		// key_techs: ['HTML', 'CSS', 'React'],
+		key_techs: ['HTML', 'CSS', 'React'],
 	},
 	{
 		id: 11,
@@ -97,7 +97,7 @@ export const projects = [
 		deployed_url: 'https://bekhzodx64.github.io/central-beton-demo/',
 		github_url: 'https://github.com/bekhzodx64/central-beton-demo',
 		// category: ['html'],
-		// key_techs: ['HTML', 'CSS', 'Tailwindcss'],
+		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 ];
 

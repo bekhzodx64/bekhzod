@@ -23,15 +23,15 @@ const Bar = ({ name, level }) => {
 	return (
 		<div className='overflow-hidden rounded-full bg-slate-200 text-white dark:bg-slate-700'>
 			<motion.div
-				className='flex items-center rounded-full bg-gradient-to-l from-green-500 to-blue-500 px-2 py-1 font-semibold sm:space-x-2'
+				className='flex items-center space-x-1 rounded-full bg-gradient-to-l from-green-500 to-blue-500 px-2 py-1 font-semibold sm:space-x-2'
 				style={{ width: bar_width }}
 				variants={variants}
 				initial='initial'
 				animate='animate'>
 				<div>
-					<SiTarget className='mr-2 sm:h-5 sm:w-5' />
+					<SiTarget className='sm:h-5 sm:w-5' />
 				</div>
-				<div className='text-xs sm:text-base'>{name}</div>
+				<div className='text-base'>{name}</div>
 			</motion.div>
 		</div>
 	);

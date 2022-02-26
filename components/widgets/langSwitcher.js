@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { stagger, fadeInRight } from '../../helpers/animations';
 
-import { MdClose, MdOutlineLanguage } from 'react-icons/md';
+import { MdOutlineLanguage } from 'react-icons/md';
 
 const LangSwitcher = () => {
 	const langRouter = useRouter();
@@ -15,32 +16,36 @@ const LangSwitcher = () => {
 	};
 
 	return (
-		<ul className='fixed right-5 top-8 flex select-none space-x-3'>
+		<ul className='flex w-full select-none space-x-3'>
 			<li
-				className='relative flex h-10 w-16 cursor-pointer items-center justify-center rounded-full bg-white shadow-md dark:bg-blue-500'
+				className='relative flex h-10 w-full cursor-pointer items-center justify-center rounded-full bg-blue-500'
 				onClick={showHandler}>
 				{show ? (
 					<>
-						<MdClose className='h-7 w-7 text-red-500 dark:text-white' />
-
-						<ul className='absolute top-14 space-y-2'>
+						<motion.ul
+							variants={stagger}
+							initial='initial'
+							animate='animate'
+							className='absolute inset-0 flex cursor-default justify-between rounded-full bg-blue-500'>
 							{langRouter.locales.map((locale) => (
-								<li key={locale} className='flex h-10 w-10 items-center justify-center'>
+								<motion.li
+									variants={fadeInRight}
+									key={locale}
+									className='flex h-10 w-10 items-center justify-center'>
 									<Link href={langRouter.asPath} locale={locale} scroll={false} replace>
-										<a className='flex h-full w-full items-center justify-center rounded-full bg-white text-xs font-semibold uppercase transition hover:bg-opacity-80 dark:bg-blue-400'>
+										<a className='hover:border-400 flex h-8 w-8 items-center justify-center rounded-full bg-blue-400 text-xs font-semibold uppercase text-white transition hover:bg-white hover:text-black'>
 											{locale}
 										</a>
 									</Link>
-								</li>
+								</motion.li>
 							))}
-						</ul>
+						</motion.ul>
 					</>
 				) : (
-					<div className='flex items-center space-x-1 font-bold uppercase text-blue-500 dark:text-white'>
-						<MdOutlineLanguage className='h-5 w-5 text-blue-500 dark:text-white' />
+					<div className='flex items-center space-x-1 uppercase text-white'>
+						<MdOutlineLanguage className='h-5 w-5 text-white' />
 						<span>{langRouter.locale}</span>
 					</div>
-					// <FaLanguage className='w-7 h-7 text-blue-500' />
 				)}
 			</li>
 		</ul>
