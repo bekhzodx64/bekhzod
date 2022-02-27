@@ -6,7 +6,6 @@ export const projects = [
 		image_path: '/projects/mogo.png',
 		deployed_url: 'https://bekhzodx64.github.io/mogo/',
 		github_url: 'https://github.com/bekhzodx64/mogo',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS'],
 	},
 	{
@@ -15,7 +14,6 @@ export const projects = [
 		image_path: '/projects/new-life.png',
 		deployed_url: 'https://bekhzodx64.github.io/yangi-hayot/',
 		github_url: 'https://github.com/bekhzodx64/yangi-hayot',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 	{
@@ -24,7 +22,6 @@ export const projects = [
 		image_path: '/projects/tesla.png',
 		deployed_url: 'https://bekhzodx64.github.io/tesla/',
 		github_url: 'https://github.com/bekhzodx64/tesla',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 	{
@@ -33,7 +30,6 @@ export const projects = [
 		image_path: '/projects/esb.png',
 		deployed_url: 'https://esbuz.uz/',
 		github_url: 'https://github.com/bekhzodx64/esbuz',
-		// category: ['html'],
 		key_techs: ['HTML', 'Tailwindcss'],
 	},
 	{
@@ -42,7 +38,6 @@ export const projects = [
 		image_path: '/projects/food.png',
 		deployed_url: 'https://bekhzodx64.github.io/react-food/',
 		github_url: 'https://github.com/bekhzodx64/react-food',
-		// category: ['react'],
 		key_techs: ['HTML', 'CSS', 'React'],
 	},
 	{
@@ -51,7 +46,6 @@ export const projects = [
 		image_path: '/projects/fortnite.png',
 		deployed_url: 'https://bekhzodx64.github.io/react-shop/',
 		github_url: 'https://github.com/bekhzodx64/react-shop',
-		// category: ['react'],
 		key_techs: ['HTML', 'CSS', 'React'],
 	},
 	{
@@ -60,7 +54,6 @@ export const projects = [
 		image_path: '/projects/darmon-diagnostika.png',
 		deployed_url: 'https://darmon-diagnostika.uz/',
 		github_url: 'https://github.com/bekhzodx64/darmon-diagnostika',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS', 'Sass'],
 	},
 	{
@@ -69,7 +62,6 @@ export const projects = [
 		image_path: '/projects/rossvik.png',
 		deployed_url: 'https://rossvik.uz/',
 		github_url: 'https://github.com/bekhzodx64/rossvik',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS', 'Sass'],
 	},
 	{
@@ -78,7 +70,6 @@ export const projects = [
 		image_path: '/projects/dalshe-bolshe.png',
 		deployed_url: 'https://dalshe-bolshe.uz/',
 		github_url: 'https://github.com/bekhzodx64/db-deploy',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
 	{
@@ -87,7 +78,6 @@ export const projects = [
 		image_path: '/projects/movie.png',
 		deployed_url: 'https://bekhzodx64.github.io/react-project/',
 		github_url: 'https://github.com/bekhzodx64/react-project',
-		// category: ['react'],
 		key_techs: ['HTML', 'CSS', 'React'],
 	},
 	{
@@ -96,8 +86,15 @@ export const projects = [
 		image_path: '/projects/central-beton.png',
 		deployed_url: 'https://bekhzodx64.github.io/central-beton-demo/',
 		github_url: 'https://github.com/bekhzodx64/central-beton-demo',
-		// category: ['html'],
 		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
+	},
+	{
+		id: 12,
+		name: 'React Food Order',
+		image_path: '/projects/react-order-food.png',
+		deployed_url: 'https://bekhzodx64.github.io/react-food-order/',
+		github_url: 'https://github.com/bekhzodx64/react-food-order',
+		key_techs: ['HTML', 'CSS', 'React'],
 	},
 ];
 
