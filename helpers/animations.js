@@ -18,6 +18,13 @@ export const fadeInRight = {
 		opacity: 1,
 		x: 0,
 	},
+	exit: {
+		opacity: 0,
+		transition: {
+			delay: 0.4,
+			ease: 'easeInOut',
+		},
+	},
 };
 
 export const stagger = {
