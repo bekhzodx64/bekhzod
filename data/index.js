@@ -96,6 +96,14 @@ export const projects = [
 		github_url: 'https://github.com/bekhzodx64/react-food-order',
 		key_techs: ['HTML', 'CSS', 'React'],
 	},
+	{
+		id: 13,
+		name: 'Desk',
+		image_path: '/projects/desk.png',
+		deployed_url: 'https://bekhzodx64.github.io/desk/',
+		github_url: 'https://github.com/bekhzodx64/desk',
+		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
+	},
 ];
 
 // Знания
