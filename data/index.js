@@ -125,6 +125,14 @@ export const knowledges = [
 		level: '85%',
 	},
 	{
+		name: 'Sass/Scss',
+		level: '85%',
+	},
+	{
+		name: 'MongoDB',
+		level: '50%',
+	},
+	{
 		name: 'NodeJs',
 		level: '40%',
 	},
