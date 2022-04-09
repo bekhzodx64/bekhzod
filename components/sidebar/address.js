@@ -6,7 +6,7 @@ const Address = () => {
 	const { t } = useTranslation('sidebar');
 
 	return (
-		<div className='col-span-3 my-5 -mx-6 space-y-3 bg-slate-200 py-4 dark:bg-slate-700 print:my-0 print:grid print:grid-cols-3 print:space-y-0'>
+		<div className='col-span-3 my-5 -mx-6 space-y-3 bg-slate-200 py-4 dark:bg-slate-700 print:my-0  print:grid print:w-full print:grid-cols-3 print:space-y-0 print:py-2'>
 			<div className='flex items-center justify-center space-x-2'>
 				<GoLocation />
 				<span>{t('address')}</span>

@@ -7,6 +7,7 @@
 		font-family: 'Gilroy';
 		font-style: normal;
 		font-weight: 400;
+		font-display: swap;
 		src: local('Gilroy'), url('/fonts/Gilroy-Regular.woff2') format('woff2'),
 			url('/fonts/Gilroy-Regular.woff') format('woff'),
 			url('/fonts/Gilroy-Regular.ttf') format('ttf'),
@@ -17,6 +18,7 @@
 		font-family: 'Gilroy';
 		font-style: normal;
 		font-weight: 600;
+		font-display: swap;
 		src: local('Gilroy'), url('/fonts/Gilroy-Semibold.woff2') format('woff2'),
 			url('/fonts/Gilroy-Semibold.woff') format('woff'),
 			url('/fonts/Gilroy-Semibold.ttf') format('ttf'),
@@ -27,6 +29,7 @@
 		font-family: 'Gilroy';
 		font-style: normal;
 		font-weight: 700;
+		font-display: swap;
 		src: local('Gilroy'), url('/fonts/Gilroy-Bold.woff2') format('woff2'),
 			url('/fonts/Gilroy-Bold.woff') format('woff'),
 			url('/fonts/Gilroy-Bold.ttf') format('ttf'),
@@ -37,6 +40,7 @@
 		font-family: 'Gilroy';
 		font-style: normal;
 		font-weight: 900;
+		font-display: swap;
 		src: local('Gilroy'), url('/fonts/Gilroy-Black.woff2') format('woff2'),
 			url('/fonts/Gilroy-Black.woff') format('woff'),
 			url('/fonts/Gilroy-Black.ttf') format('ttf'),

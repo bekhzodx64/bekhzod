@@ -27,7 +27,7 @@ const ThemeBtn = () => {
 
 	if (!mounted)
 		return (
-			<div className='mx-auto w-full max-w-[200px] select-none'>
+			<div className='mx-auto w-full max-w-[200px] select-none print:hidden'>
 				<button className='my-2 flex items-center justify-center rounded-full bg-blue-500 px-3 py-3 text-white outline-none focus:ring-4'>
 					<AiOutlineReload className='animate-spin' />
 				</button>
