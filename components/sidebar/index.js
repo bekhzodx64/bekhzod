@@ -11,13 +11,15 @@ import ThemeBtn from './themeBtn';
 const Sidebar = () => {
 	return (
 		<Fragment>
-			<Avatar />
-			<Name />
-			<Badge />
-			<SocialInfo />
-			<Address />
-			<ContactBtn />
-			<ThemeBtn />
+			<div className='print:grid print:grid-cols-3'>
+				<Avatar />
+				<Name />
+				<Badge />
+				<SocialInfo />
+				<Address />
+				<ContactBtn />
+				<ThemeBtn />
+			</div>
 		</Fragment>
 	);
 };

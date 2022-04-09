@@ -1,3 +1,10 @@
 {
-	"title": "Web Developer | Main Page"
+	"title": "Web Developer | Main Page",
+	"question": "What I offer",
+	"service1": "Layout",
+	"serviceDescription1": "Web page layout in a short time (HTML, CSS, JavaScript)",
+	"serviceDescription2": "Web application development using React JS and Next JS",
+	"serviceDescription3": "Node JS & MongoDB is on process",
+	"serviceDescription4": "Developing web applications based on MERN stack",
+	"serviceDescription5": "Soon..."
 }

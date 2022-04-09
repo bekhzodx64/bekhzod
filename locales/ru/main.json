@@ -1,3 +1,10 @@
 {
-	"title": "Веб разработчик | Главная"
+	"title": "Веб разработчик | Главная",
+	"question": "Что я предлагаю",
+	"service1": "Верстка",
+	"serviceDescription1": "Верстка веб страниц за короткие сроки (HTML, CSS, JavaScript)",
+	"serviceDescription2": "Разработка веб приложении используя React JS и Next JS",
+	"serviceDescription3": "В процессе Node JS и MongoDB",
+	"serviceDescription4": "Создание полноценного веб сайта на основе MERN Stack",
+	"serviceDescription5": "Скоро..."
 }

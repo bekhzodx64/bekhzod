@@ -1,11 +1,10 @@
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { stagger, fadeInUp } from '../../helpers/animations';
 import useTranslation from 'next-translate/useTranslation';
-
+import Image from 'next/image';
 import { AiFillGithub } from 'react-icons/ai';
 import { CgWebsite } from 'react-icons/cg';
 import { MdClose } from 'react-icons/md';
+import { fadeInUp, stagger } from '../../helpers/animations';
 
 const ProjectCard = ({
 	showDetail,

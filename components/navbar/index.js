@@ -22,7 +22,7 @@ const Navbar = () => {
 	}, [about, projects, resume, pathname]);
 
 	return (
-		<div className='mb-4 flex items-center justify-between'>
+		<div className='mb-4 flex items-center justify-between print:hidden'>
 			<span className='hidden border-b-4 border-blue-500 text-2xl font-bold text-blue-500 sm:block'>
 				{activeItem}
 			</span>

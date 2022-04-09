@@ -39,10 +39,7 @@ const Resume = () => {
 							<span>{t('resume:university')}</span>
 						</h5>
 						<p className='font-semibold'>Разработка практических программных средств</p>
-						<p>
-							Учусь в магистратуре в Ташкентском Университете Информационных Технологий
-							Имени Мухаммад Ал-Хоразмий.
-						</p>
+						<p>{t('resume:eduDescription')}</p>
 					</div>
 				</motion.div>
 
@@ -66,11 +63,7 @@ const Resume = () => {
 							</a>
 						</h5>
 						<p className='font-semibold'>{t('resume:profession')}</p>
-						<p>
-							Устроился на работу Контент менеджером, поработал в этой должности 5 месяцев
-							а потом на должности Веб разрботчика 9 месяцев. Но в конце пришлось
-							уволиться из за нехватки времени на учебу.
-						</p>
+						<p>{t('resume:expDescription')}</p>
 					</div>
 				</motion.div>
 			</div>

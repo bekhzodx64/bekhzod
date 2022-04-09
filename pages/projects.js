@@ -1,16 +1,13 @@
-import { useState } from 'react';
-import { Fragment } from 'react';
-import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
-import { projects as projectsData } from '../data';
-
 import { motion } from 'framer-motion';
-import { routeAnimation, stagger, fadeInUp } from '../helpers/animations';
-
+import useTranslation from 'next-translate/useTranslation';
+import Head from 'next/head';
+import { Fragment, useState } from 'react';
 import ProjectCard from '../components/projects/projectCard';
+import { projects as projectsData } from '../data';
+import { fadeInUp, routeAnimation, stagger } from '../helpers/animations';
 
 const Projects = () => {
-	const [showDetail, setShowDetail] = useState(false);
+	const [showDetail, setShowDetail] = useState(null);
 
 	const { t } = useTranslation();
 

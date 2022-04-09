@@ -2,25 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	* {
-		-webkit-tap-highlight-color: transparent;
-	}
-
-	::-webkit-scrollbar-thumb {
-		/* background-image: linear-gradient(to right bottom, #00f260, #0575e6); */
-		@apply rounded-full bg-slate-400/80 hover:bg-slate-500/70 dark:bg-slate-700/60;
-	}
-
-	::-webkit-scrollbar {
-		width: 6px;
-	}
-
-	/* background-image: linear-gradient(to right bottom, #00f260, #0575e6); */
-	::-webkit-scrollbar-track {
-		@apply rounded-full dark:bg-slate-900;
-	}
-
+@layer base {
 	@font-face {
 		font-family: 'Gilroy';
 		font-style: normal;
@@ -59,5 +41,23 @@
 			url('/fonts/Gilroy-Black.woff') format('woff'),
 			url('/fonts/Gilroy-Black.ttf') format('ttf'),
 			url('/fonts/Gilroy-Black.eot') format('eot');
+	}
+}
+
+@layer components {
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply rounded-full bg-slate-400/80 hover:bg-slate-500/70 dark:bg-slate-700/60;
+	}
+
+	::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	::-webkit-scrollbar-track {
+		@apply rounded-full dark:bg-slate-900;
 	}
 }

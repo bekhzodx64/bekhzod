@@ -3,7 +3,7 @@ import avatar from '../../public/avatar.png';
 
 const Avatar = () => {
 	return (
-		<div className='flex justify-center'>
+		<div className='flex justify-center print:hidden'>
 			<Image
 				src={avatar}
 				alt='User Avatar'

@@ -1,8 +1,6 @@
 {
-	"test": "Sidebar",
 	"profession": "Web Developer",
 	"address": "Uzbekistan, Tashkent",
-	"contact": "Contact Me",
-	"day": "Light mode",
-	"night": "Dark mode"
+	"download": "Download CV",
+	"contact": "Contact Me"
 }
