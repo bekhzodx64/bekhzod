@@ -22,12 +22,7 @@ const HomePage = () => {
 				<title>{t('main:title')}</title>
 			</Head>
 			<div>
-				<h2 className='print:text-justify'>
-					Здравствуйте ! Занимаюсь веб разработкой больше 2-х лет. Создаю веб сайты с
-					учетом кроссбраузерности, адаптивности и отзывчивости. Для быстрых решений со
-					стилем сайта использую фреймворк Tailwindcss ( который лучше чем bootstrap ).
-					Перейдите во вкладку Проекты что бы посмотреть мои проделанные работы.
-				</h2>
+				<h2 className='print:text-justify'>{t('main:bio')}</h2>
 			</div>
 			<div className='-mx-6 space-y-10 p-6 print:space-y-0 md:h-full lg:bg-slate-200 lg:dark:bg-slate-700 2xl:space-y-12'>
 				<h2 className='text-2xl font-bold tracking-wide'>{t('main:question')}</h2>

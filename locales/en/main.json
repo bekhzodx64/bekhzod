@@ -1,5 +1,6 @@
 {
 	"title": "Web Developer | Main Page",
+	"bio": "Hello everybody! I have been engaged in web development for more than 2 years. I create websites with cross-browser compatibility, adaptability and responsiveness in mind. For quick solutions with the style of the site, I use the Tailwindcss framework (which is better than bootstrap). Go to the Projects tab to view my completed work.",
 	"question": "What I offer",
 	"service1": "Layout",
 	"serviceDescription1": "Web page layout in a short time (HTML, CSS, JavaScript)",

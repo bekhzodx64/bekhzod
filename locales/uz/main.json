@@ -1,10 +1,11 @@
 {
 	"title": "Web Dasturchi | Bosh menu",
+	"bio": "Assalomu alaykum! 2 yildan ortiq web dasturlash bilan shug'illanib kelmoqdaman. Men web sahifalarni barcha qurilmalar uchun moslashtirgan holda ya'ni mobil qurilmalar, planshetlar va desktop qurilmalari uchun yasay olaman. Web sahifaning ko'rinishini tezda bajarish uchun men tailwindcss frameworkidan foydalanaman (bootstrapdan ancha yaxshi). Proyektlar bo'limiga o'tsangiz barcha bajargan ishlarim mavjud.",
 	"question": "Mening takliflarim",
-	"service1": "Tarjima tayyor emas !",
-	"serviceDescription1": "Tarjima tayyor emas !",
-	"serviceDescription2": "Tarjima tayyor emas !",
-	"serviceDescription3": "Tarjima tayyor emas !",
-	"serviceDescription4": "Tarjima tayyor emas !",
+	"service1": "Verstka",
+	"serviceDescription1": "Qisqa muddat ichida verstka qilish (HTML, CSS, JavaScript)",
+	"serviceDescription2": "React JS va Next JS orqali web ilovalar yasash.",
+	"serviceDescription3": "Node JS va MongoDB o'rganilmoqda!",
+	"serviceDescription4": "MERN Stack texnologiyasi asosida to'liq web ilova yasash.",
 	"serviceDescription5": "Tez kunda..."
 }

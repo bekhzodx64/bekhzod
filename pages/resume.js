@@ -38,7 +38,7 @@ const Resume = () => {
 							<MdSchool />
 							<span>{t('resume:university')}</span>
 						</h5>
-						<p className='font-semibold'>Разработка практических программных средств</p>
+						<p className='font-semibold'>{t('resume:faculty')}</p>
 						<p>{t('resume:eduDescription')}</p>
 					</div>
 				</motion.div>
