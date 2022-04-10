@@ -11,7 +11,7 @@ const NavItem = ({ activeItem, name, route, setActiveItem }) => {
 		</Link>
 	) : (
 		<div className='relative select-none'>
-			<div className='before:absolute before:-top-2 before:left-1/2 before:h-2 before:w-2 before:-translate-x-1/2 before:animate-pulse before:rounded-full before:bg-blue-500'>
+			<div className='before:absolute before:-top-2 before:left-1/2 before:h-2 before:w-2 before:-translate-x-1/2 before:animate-bounce before:rounded-full before:bg-blue-500'>
 				{name}
 			</div>
 		</div>
