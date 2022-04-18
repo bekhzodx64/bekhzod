@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { BsGithub, BsTelegram } from 'react-icons/bs';
-import { AiFillFilePdf } from 'react-icons/ai';
+import { AiOutlineCloudDownload } from 'react-icons/ai';
 import useTranslation from 'next-translate/useTranslation';
 
 const SocialInfo = () => {
@@ -25,7 +25,7 @@ const SocialInfo = () => {
 				whileTap={{ scale: 0.9 }}
 				aria-label='Resume'
 				rel='noreferrer'>
-				<AiFillFilePdf className='mr-2 h-6 w-6 text-white' />
+				<AiOutlineCloudDownload className='mr-2 h-6 w-6 text-white' />
 				{t('sidebar:download')}
 			</motion.a>
 
