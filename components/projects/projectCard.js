@@ -5,6 +5,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { CgWebsite } from 'react-icons/cg';
 import { MdClose } from 'react-icons/md';
 import { fadeInUp, stagger } from '../../helpers/animations';
+import ImagePlaceholder from '../layout/placeholder';
 
 const ProjectCard = ({
 	showDetail,
@@ -15,14 +16,10 @@ const ProjectCard = ({
 
 	return (
 		<div>
-			<Image
-				src={image_path}
-				alt={name}
-				className='cursor-pointer rounded-lg object-cover'
-				onClick={() => setShowDetail(id)}
-				width='1280'
-				height='720'
-				layout='responsive'
+			<ImagePlaceholder
+				image={image_path}
+				name={name}
+				clickHandler={() => setShowDetail(id)}
 			/>
 			<p className='mt-3 text-center'>{name}</p>
 

@@ -7,13 +7,12 @@ const Avatar = () => {
 			<Image
 				src={avatar}
 				alt='User Avatar'
-				className='mx-auto rounded-full'
 				width={128}
 				height={128}
-				layout='intrinsic'
 				quality={100}
 				priority
 				placeholder='blur'
+				className='mx-auto rounded-full'
 			/>
 		</div>
 	);
