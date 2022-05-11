@@ -6,12 +6,12 @@ export default function ImagePlaceholder({ image, name, clickHandler }) {
 	<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	  <defs>
 	    <linearGradient id="g">
-	      <stop stop-color="#91A3B0" offset="20%" />
+	      <stop stop-color="#D1D7DC" offset="20%" />
 	      <stop stop-color="#E2E8F0" offset="50%" />
-	      <stop stop-color="#91A3B0" offset="70%" />
+	      <stop stop-color="#D1D7DC" offset="70%" />
 	    </linearGradient>
 	  </defs>
-	  <rect width="${w}" height="${h}" fill="#91A3B0" />
+	  <rect width="${w}" height="${h}" fill="#D1D7DC" />
 	  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
 	  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
 	</svg>`;
