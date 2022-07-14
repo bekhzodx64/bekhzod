@@ -34,7 +34,7 @@ const Navbar = () => {
 			font-semibold 
 			rounded-2xl 
 			bg-white
-			dark:bg-slate-700
+			dark:bg-slate-800
 			px-5
 			py-5 
 			mx-auto 
@@ -62,7 +62,7 @@ const Navbar = () => {
 			lg:divide-none
 			print:hidden
 			'>
-				<div className='flex flex-col justify-center items-center grow '>
+				<div className='flex flex-col justify-center items-center grow'>
 					<NavItem
 						route='/'
 						name={about}
