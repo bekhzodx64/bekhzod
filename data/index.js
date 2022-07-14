@@ -42,11 +42,11 @@ export const projects = [
 	},
 	{
 		id: 6,
-		name: 'Fortnite',
-		image_path: '/projects/fortnite.png',
-		deployed_url: 'https://bekhzodx64.github.io/react-shop/',
-		github_url: 'https://github.com/bekhzodx64/react-shop',
-		key_techs: ['HTML', 'CSS', 'React'],
+		name: 'Fortnite E-commerce',
+		image_path: '/projects/fortnite-shop.png',
+		deployed_url: 'https://bekhzodx64.github.io/fortnite-api-shop/',
+		github_url: 'https://github.com/bekhzodx64/fortnite-api-shop',
+		key_techs: ['HTML', 'Tailwindcss', 'React', 'Redux Toolkit'],
 	},
 	{
 		id: 7,
