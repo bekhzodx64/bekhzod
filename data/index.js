@@ -65,14 +65,6 @@ export const projects = [
 		key_techs: ['HTML', 'CSS', 'Sass'],
 	},
 	{
-		id: 9,
-		name: 'Дальше-Больше',
-		image_path: '/projects/dalshe-bolshe.png',
-		deployed_url: 'https://dalshe-bolshe.uz/',
-		github_url: 'https://github.com/bekhzodx64/db-deploy',
-		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
-	},
-	{
 		id: 10,
 		name: 'Movie',
 		image_path: '/projects/movie.png',
@@ -104,7 +96,7 @@ export const projects = [
 		github_url: 'https://github.com/bekhzodx64/desk',
 		key_techs: ['HTML', 'CSS', 'Tailwindcss'],
 	},
-];
+]
 
 // Знания
 export const knowledges = [
@@ -136,7 +128,7 @@ export const knowledges = [
 		name: 'NodeJs',
 		level: '40%',
 	},
-];
+]
 
 // Инструменты
 export const tools = [
@@ -160,4 +152,4 @@ export const tools = [
 		name: 'AdobeXD',
 		level: '75%',
 	},
-];
+]
