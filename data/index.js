@@ -1,7 +1,7 @@
 // Проекты
 export const projects = [
 	{
-		id: 14,
+		id: 9,
 		name: 'Users',
 		image_path: '/projects/lyt-project.png',
 		deployed_url: 'https://lyt-react-project.netlify.app/',
