@@ -1,6 +1,14 @@
 // Проекты
 export const projects = [
 	{
+		id: 14,
+		name: 'Users',
+		image_path: '/projects/lyt-project.png',
+		deployed_url: 'https://lyt-react-project.netlify.app/',
+		github_url: 'https://github.com/bekhzodx64/lyt-project',
+		key_techs: ['HTML', 'React', 'Tailwindcss'],
+	},
+	{
 		id: 1,
 		name: 'Mogo',
 		image_path: '/projects/mogo.png',
