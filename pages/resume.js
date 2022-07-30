@@ -1,25 +1,26 @@
-import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
-import { knowledges, tools } from '../data';
-import { motion } from 'framer-motion';
-import { fadeInUp, routeAnimation } from '../helpers/animations';
+import Head from 'next/head'
+import useTranslation from 'next-translate/useTranslation'
+import { knowledges, tools } from '../data'
+import { motion } from 'framer-motion'
+import { fadeInUp, routeAnimation } from '../helpers/animations'
 
-import Bar from '../components/resume/bar';
+import Bar from '../components/resume/bar'
 
-import { MdSchool } from 'react-icons/md';
-import { GoLinkExternal } from 'react-icons/go';
-import { RiToolsFill } from 'react-icons/ri';
-import { MdDashboardCustomize } from 'react-icons/md';
+import { MdSchool } from 'react-icons/md'
+import { GoLinkExternal } from 'react-icons/go'
+import { RiToolsFill } from 'react-icons/ri'
+import { MdDashboardCustomize } from 'react-icons/md'
 
 const Resume = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
 	return (
 		<motion.div
 			variants={routeAnimation}
 			initial='initial'
 			animate='animate'
-			className='flex h-[90%] flex-col gap-5'>
+			className='flex h-[90%] flex-col gap-5'
+		>
 			<Head>
 				<title>{t('resume:title')}</title>
 			</Head>
@@ -29,17 +30,38 @@ const Resume = () => {
 					variants={fadeInUp}
 					initial='initial'
 					animate='animate'
-					className='space-y-3'>
+					className='space-y-3'
+				>
 					<h5 className='text-center text-2xl font-bold md:text-left'>
 						{t('resume:education')}
 					</h5>
 					<div className='space-y-2'>
-						<h5 className='flex h-8 items-center space-x-1 text-xl font-bold'>
-							<MdSchool />
-							<span>{t('resume:university')}</span>
+						<h5 className='inline-flex h-8 items-center space-x-1 text-xl font-bold group'>
+							<MdSchool className='group-hover:text-blue-500 transition-all' />
+							<a
+								href='http://tdtu.uz/'
+								rel='noreferrer'
+								target='blank'
+								className='group-hover:text-blue-500 transition-all'
+							>
+								{t('resume:bachelor')}
+							</a>
 						</h5>
-						<p className='font-semibold'>{t('resume:faculty')}</p>
-						<p>{t('resume:eduDescription')}</p>
+						<p className=''>{t('resume:bachelorFaculty')}</p>
+					</div>
+					<div className='space-y-2'>
+						<h5 className='inline-flex h-8 items-center space-x-1 text-xl font-bold group'>
+							<MdSchool className='group-hover:text-blue-500 transition-all' />
+							<a
+								href='https://tuit.uz/ru'
+								rel='noreferrer'
+								target='blank'
+								className='group-hover:text-blue-500 transition-all'
+							>
+								{t('resume:masters')}
+							</a>
+						</h5>
+						<p className=''>{t('resume:mastersFaculty')}</p>
 					</div>
 				</motion.div>
 
@@ -47,7 +69,8 @@ const Resume = () => {
 					variants={fadeInUp}
 					initial='initial'
 					animate='animate'
-					className='space-y-3'>
+					className='space-y-3'
+				>
 					<h5 className='text-center text-2xl font-bold md:text-left'>
 						{t('resume:experience')}
 					</h5>
@@ -57,7 +80,8 @@ const Resume = () => {
 								href='https://220volt.uz/'
 								target='_blank'
 								rel='noreferrer'
-								className='inline-flex items-center space-x-1 decoration-blue-500 underline-offset-2 outline-none transition hover:text-blue-500 focus:underline'>
+								className='inline-flex items-center space-x-1 outline-none transition hover:text-blue-500'
+							>
 								<GoLinkExternal />
 								<span>220volt.uz</span>
 							</a>
@@ -76,7 +100,11 @@ const Resume = () => {
 					</h5>
 					<div className='space-y-2'>
 						{knowledges.map((knowledge) => (
-							<Bar name={knowledge.name} level={knowledge.level} key={knowledge.name} />
+							<Bar
+								name={knowledge.name}
+								level={knowledge.level}
+								key={knowledge.name}
+							/>
 						))}
 					</div>
 				</div>
@@ -94,7 +122,7 @@ const Resume = () => {
 				</div>
 			</div>
 		</motion.div>
-	);
-};
+	)
+}
 
-export default Resume;
+export default Resume

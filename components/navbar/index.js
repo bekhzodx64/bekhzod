@@ -1,27 +1,27 @@
-import useTranslation from 'next-translate/useTranslation';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { AiFillHome } from 'react-icons/ai';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { FaUserAlt } from 'react-icons/fa';
-import NavItem from './navItem';
+import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { AiFillHome } from 'react-icons/ai'
+import { BsFillBriefcaseFill } from 'react-icons/bs'
+import { FaUserAlt } from 'react-icons/fa'
+import NavItem from './navItem'
 
 const Navbar = () => {
-	let { t } = useTranslation('navbar');
+	let { t } = useTranslation('navbar')
 
-	const [activeItem, setActiveItem] = useState(null);
+	const [activeItem, setActiveItem] = useState(null)
 
-	const { pathname } = useRouter();
+	const { pathname } = useRouter()
 
-	const about = t('about');
-	const projects = t('projects');
-	const resume = t('resume');
+	const about = t('about')
+	const projects = t('projects')
+	const resume = t('resume')
 
 	useEffect(() => {
-		if (pathname === '/') setActiveItem(about);
-		if (pathname === '/projects') setActiveItem(projects);
-		if (pathname === '/resume') setActiveItem(resume);
-	}, [about, projects, resume, pathname]);
+		if (pathname === '/') setActiveItem(about)
+		if (pathname === '/projects') setActiveItem(projects)
+		if (pathname === '/resume') setActiveItem(resume)
+	}, [about, projects, resume, pathname])
 
 	return (
 		<div className='mb-4 flex items-center justify-between print:hidden'>
@@ -61,7 +61,8 @@ const Navbar = () => {
 			divide-x
 			lg:divide-none
 			print:hidden
-			'>
+			'
+			>
 				<div className='flex flex-col justify-center items-center grow'>
 					<NavItem
 						route='/'
@@ -77,7 +78,9 @@ const Navbar = () => {
 						name={projects}
 						activeItem={activeItem}
 						setActiveItem={setActiveItem}
-						icon={<BsFillBriefcaseFill className='lg:hidden w-8 h-8 text-[#3B82F6]' />}
+						icon={
+							<BsFillBriefcaseFill className='lg:hidden w-8 h-8 text-[#3B82F6]' />
+						}
 					/>
 				</div>
 				<div className='flex flex-col justify-center items-center grow'>
@@ -91,7 +94,7 @@ const Navbar = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Navbar;
+export default Navbar

@@ -1,15 +1,15 @@
-import { motion } from 'framer-motion';
-import useTranslation from 'next-translate/useTranslation';
-import Head from 'next/head';
-import React from 'react';
-import { AiOutlineHtml5 } from 'react-icons/ai';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiMongodb, SiElectron } from 'react-icons/si';
-import ServiceCard from '../components/main/serviceCard';
-import { routeAnimation, stagger } from '../helpers/animations';
+import { motion } from 'framer-motion'
+import useTranslation from 'next-translate/useTranslation'
+import Head from 'next/head'
+import React from 'react'
+import { AiOutlineHtml5 } from 'react-icons/ai'
+import { FaNodeJs, FaReact } from 'react-icons/fa'
+import { SiMongodb, SiElectron } from 'react-icons/si'
+import ServiceCard from '../components/main/serviceCard'
+import { routeAnimation, stagger } from '../helpers/animations'
 
 const HomePage = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
 	return (
 		<motion.div
@@ -17,7 +17,8 @@ const HomePage = () => {
 			variants={routeAnimation}
 			initial='initial'
 			animate='animate'
-			exit='exit'>
+			exit='exit'
+		>
 			<Head>
 				<title>{t('main:title')}</title>
 			</Head>
@@ -33,7 +34,8 @@ const HomePage = () => {
 						className='relative grid h-[325px] gap-x-10 gap-y-14 pr-3 print:h-auto print:grid-cols-2 print:gap-x-2 print:gap-y-0 print:pr-0 sm:grid-cols-2 lg:h-[270px] xl:h-full xl:grid-cols-3 landscape:print:grid-cols-3'
 						variants={stagger}
 						initial='initial'
-						animate='animate'>
+						animate='animate'
+					>
 						<ServiceCard
 							title={t('main:service1')}
 							description={t('main:serviceDescription1')}
@@ -55,11 +57,6 @@ const HomePage = () => {
 							icon={<SiMongodb className='h-9 w-9' />}
 						/>
 						<ServiceCard
-							title='ReactNative'
-							description={t('main:serviceDescription5')}
-							icon={<FaReact className='h-9 w-9' />}
-						/>
-						<ServiceCard
 							title='Electron JS'
 							description={t('main:serviceDescription5')}
 							icon={<SiElectron className='h-9 w-9' />}
@@ -68,7 +65,7 @@ const HomePage = () => {
 				</div>
 			</div>
 		</motion.div>
-	);
-};
+	)
+}
 
-export default HomePage;
+export default HomePage
