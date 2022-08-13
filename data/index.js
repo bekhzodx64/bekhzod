@@ -6,7 +6,15 @@ export const projects = [
 		image_path: '/projects/lyt-project.png',
 		deployed_url: 'https://lyt-react-project.netlify.app/',
 		github_url: 'https://github.com/bekhzodx64/lyt-project',
-		key_techs: ['HTML', 'React', 'Tailwindcss'],
+		key_techs: ['React', 'Tailwindcss'],
+	},
+	{
+		id: 14,
+		name: 'Feedback App',
+		image_path: '/projects/feedback-app.png',
+		deployed_url: 'https://bekhzodx64.github.io/feedback-app/',
+		github_url: 'https://github.com/bekhzodx64/feedback-app',
+		key_techs: ['React', 'Redux Toolkit'],
 	},
 	{
 		id: 1,
@@ -46,7 +54,7 @@ export const projects = [
 		image_path: '/projects/food.png',
 		deployed_url: 'https://bekhzodx64.github.io/react-food/',
 		github_url: 'https://github.com/bekhzodx64/react-food',
-		key_techs: ['HTML', 'CSS', 'React'],
+		key_techs: ['React', 'CSS'],
 	},
 	{
 		id: 6,
@@ -54,7 +62,7 @@ export const projects = [
 		image_path: '/projects/fortnite-shop.png',
 		deployed_url: 'https://bekhzodx64.github.io/fortnite-api-shop/',
 		github_url: 'https://github.com/bekhzodx64/fortnite-api-shop',
-		key_techs: ['HTML', 'Tailwindcss', 'React', 'Redux Toolkit'],
+		key_techs: ['React', 'Tailwindcss', 'Redux Toolkit'],
 	},
 	{
 		id: 7,
@@ -78,7 +86,7 @@ export const projects = [
 		image_path: '/projects/movie.png',
 		deployed_url: 'https://bekhzodx64.github.io/react-project/',
 		github_url: 'https://github.com/bekhzodx64/react-project',
-		key_techs: ['HTML', 'CSS', 'React'],
+		key_techs: ['React', 'CSS'],
 	},
 	{
 		id: 11,
@@ -94,7 +102,7 @@ export const projects = [
 		image_path: '/projects/react-order-food.png',
 		deployed_url: 'https://bekhzodx64.github.io/react-food-order/',
 		github_url: 'https://github.com/bekhzodx64/react-food-order',
-		key_techs: ['HTML', 'CSS', 'React'],
+		key_techs: ['React', 'CSS'],
 	},
 	{
 		id: 13,
@@ -114,11 +122,11 @@ export const knowledges = [
 	},
 	{
 		name: 'React',
-		level: '50%',
+		level: '60%',
 	},
 	{
 		name: 'Next.js',
-		level: '45%',
+		level: '50%',
 	},
 	{
 		name: 'Tailwindcss',

@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from 'next/document'
 
 const Document = () => {
 	return (
@@ -10,12 +10,12 @@ const Document = () => {
 					content='фулл стек разработчик, фронтенд разработчик, разработчик в узбекистане, фронтенд узбекистан, фрилансер в узбекистане'
 				/>
 			</Head>
-			<body className='bg-gradient-to-tl from-green-500 to-blue-500 dark:from-slate-900 dark:to-slate-900'>
+			<body className='bg-gradient-to-tl from-green-500 via-purple-500 to-blue-500 dark:from-slate-900 dark:to-slate-900'>
 				<Main />
 				<NextScript />
 			</body>
 		</Html>
-	);
-};
+	)
+}
 
-export default Document;
+export default Document
