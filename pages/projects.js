@@ -1,15 +1,15 @@
-import { motion } from 'framer-motion';
-import useTranslation from 'next-translate/useTranslation';
-import Head from 'next/head';
-import { Fragment, useState } from 'react';
-import ProjectCard from '../components/projects/projectCard';
-import { projects as projectsData } from '../data';
-import { fadeInUp, routeAnimation, stagger } from '../helpers/animations';
+import { motion } from 'framer-motion'
+import useTranslation from 'next-translate/useTranslation'
+import Head from 'next/head'
+import { Fragment, useState } from 'react'
+import ProjectCard from '../components/projects/projectCard'
+import { projects as projectsData } from '../data'
+import { fadeInUp, routeAnimation, stagger } from '../helpers/animations'
 
 const Projects = () => {
-	const [showDetail, setShowDetail] = useState(null);
+	const [showDetail, setShowDetail] = useState(null)
 
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
 	return (
 		<Fragment>
@@ -21,17 +21,20 @@ const Projects = () => {
 				variants={routeAnimation}
 				initial='initial'
 				animate='animate'
-				exit='exit'>
+				exit='exit'
+			>
 				<motion.div
 					className='grid h-[530px] gap-5 pr-3 sm:grid-cols-2 xl:grid-cols-3'
 					variants={stagger}
 					initial='initial'
-					animate='animate'>
+					animate='animate'
+				>
 					{projectsData.map((project) => (
 						<motion.div
 							className='rounded-lg bg-slate-200 p-2 dark:bg-slate-700'
 							variants={fadeInUp}
-							key={project.name}>
+							key={project.id}
+						>
 							<ProjectCard
 								project={project}
 								showDetail={showDetail}
@@ -42,7 +45,7 @@ const Projects = () => {
 				</motion.div>
 			</motion.div>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default Projects;
+export default Projects
